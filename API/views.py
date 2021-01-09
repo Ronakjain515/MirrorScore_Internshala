@@ -12,7 +12,11 @@ class ping(APIView):
 
 class task(APIView):
     def get(self, request):
-        dt_object = datetime.fromtimestamp(int(request.GET.get("date")))
+        try:
+            dateData = int(request.GET.get("date"))
+        except:
+            return Response(status=status.HTTP_400_BAD_REQUEST)
+        dt_object = datetime.fromtimestamp(dateData)
         if dt_object.date() == date.today():
             return Response(status=status.HTTP_200_OK)
         return Response(status=status.HTTP_400_BAD_REQUEST)
