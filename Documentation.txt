@@ -1,0 +1,25 @@
+﻿MIRROR SCORE
+
+My Name is Ronak jain. I have given a task for an Internship through Internshala. Here’s a short description of the given task.
+1. Ubuntu is used as a platform to complete this task.
+2. Django Rest Framework is used to develop this given task project.
+
+
+This project consists of Two API’s, which are describe below:
+1. First API:-
+method – GET (not parameter required)
+url - /ping
+response – {“Status”: “OK”}
+description – This used to check wheater server is active or not, if server is active and working then it will always response “Status”: “OK”.
+2. Second API:-
+method – GET (“date” parameter required)
+url - /
+response – if date is matched then returns status code HTTP_200_OK
+                   else return status code HTTP_400_BAD_REQUEST
+
+description – This takes one parameter “date” is time stamp format e.g. 1510194235 
+
+
+
+
+The given task is hard to understand even I have asked to Ashish Sinha on Internshala chat to explain it more but he didn’t respond to it. It is possible that I have done something wrong and you want me to do something else.
